@@ -1,0 +1,3 @@
+package com.smartcollege.entity;
+import jakarta.persistence.*; 
+@Entity public class TimetableEntry { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) private Long id; private String day; private String startTime; private String endTime; private String subject; private String room; public Long getId(){return id;} public String getDay(){return day;} public void setDay(String v){day=v;} public String getStartTime(){return startTime;} public void setStartTime(String v){startTime=v;} public String getEndTime(){return endTime;} public void setEndTime(String v){endTime=v;} public String getSubject(){return subject;} public void setSubject(String v){subject=v;} public String getRoom(){return room;} public void setRoom(String v){room=v;} }

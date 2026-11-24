@@ -1,0 +1,3 @@
+package com.smartcollege.entity;
+import jakarta.persistence.*; import java.time.LocalDateTime; 
+@Entity public class Notice { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) private Long id; private String title; @Column(length=4000) private String message; private LocalDateTime createdAt=LocalDateTime.now(); private String createdBy; public Long getId(){return id;} public String getTitle(){return title;} public void setTitle(String v){title=v;} public String getMessage(){return message;} public void setMessage(String v){message=v;} public LocalDateTime getCreatedAt(){return createdAt;} public String getCreatedBy(){return createdBy;} public void setCreatedBy(String v){createdBy=v;} }

@@ -1,0 +1,3 @@
+package com.smartcollege.entity;
+import jakarta.persistence.*; import java.time.LocalDate; 
+@Entity public class Attendance { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) private Long id; private String studentEmail; private String subject; private LocalDate date; private boolean present; public Long getId(){return id;} public String getStudentEmail(){return studentEmail;} public void setStudentEmail(String v){studentEmail=v;} public String getSubject(){return subject;} public void setSubject(String v){subject=v;} public LocalDate getDate(){return date;} public void setDate(LocalDate v){date=v;} public boolean isPresent(){return present;} public void setPresent(boolean v){present=v;} }
